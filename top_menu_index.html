@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Fullscreen flexbox overlay navigation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./top_menu_style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="overlay-navigation">
+  <nav role="navigation">
+    <ul>
+       <li><a href="index1.html" data-content="The beginning">Home</a></li>
+      <li><a href="search.html" data-content="Search Muscle">Search</a></li>
+      <li><a href="index2.html" data-content="View Muscle">Body</a></li>
+      <li><a href="about.html" data-content="Curious?">About</a></li>
+      <li><a href="index.html" data-content="Recommence All">Re-fresh</a></li>
+    </ul>
+  </nav>
+</div>
+
+<section class="home">
+  <div class="open-overlay">
+    <span class="bar-top"></span>
+    <span class="bar-middle"></span>
+    <span class="bar-bottom"></span>
+  </div>
+</section>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+  </script><script  src="./top_menu_script.js"></script>
+
+</body>
+</html>

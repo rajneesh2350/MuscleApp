@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Search...</title>
+  <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+  <link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+<style type="text/css">
+/* unvisited link */
+a:link {
+  color: #4C4C4C;
+  text-decoration: none;
+}
+/* visited link */
+a:visited {
+  color: #4C4C4C;
+}
+/* mouse over link */
+a:hover {
+  color: #4C4C4C;
+}
+/* selected link */
+a:active {
+  color: #4C4C4C;
+}
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans|Maven+Pro:500' rel='stylesheet' type='text/css'>
+<!--<div class="deco topdeco">
+
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  </div>-->
+
+  <section class="list-wrap">
+
+  <!-- <label for="search-text">Search the list</label> -->
+
+  <input type="text" id="search-text" placeholder="search" class="search-box">
+
+    <span class="list-count"></span>
+
+<ul id="list">
+    <li class="in">1.&nbsp;&nbsp;<a href="1.html" target="_self">STERNOCLEIDOMASTOID</a></li>
+    <li class="in">2.&nbsp;&nbsp;<a href="2.html" target="_self">TRAPEZIUS</a></li>
+    <li class="in">3.&nbsp;&nbsp;<a href="3.html" target="_self">DELTOID</a></li>
+    <li class="in">4.&nbsp;&nbsp;<a href="4.html" target="_self">PECTORALIS MAJOR</a></li>
+    <li class="in">5.&nbsp;&nbsp;<a href="5.html" target="_self">RECTUS ABDOMINIS</a></li>
+    <li class="in">6.&nbsp;&nbsp;<a href="6.html" target="_self">SERRATUS ANTERIOR</a></li>
+    <li class="in">7.&nbsp;&nbsp;<a href="7.html" target="_self">ABDOMINAL EXTERNAL OBLIQUE</a></li>
+    <li class="in">8.&nbsp;&nbsp;<a href="8.html" target="_self">BICEPS BRACHII</a></li>
+    <li class="in">9.&nbsp;&nbsp;<a href="9.html" target="_self">BRACHIORADIALIS</a></li>
+    <li class="in">10.&nbsp;&nbsp;<a href="10.html" target="_self">FLEXOR CARPI RADIALIS</a></li>
+    <li class="in">11.&nbsp;&nbsp;<a href="11.html" target="_self">PALMARIS LONGUS</a></li>
+    <li class="in">12.&nbsp;&nbsp;<a href="12.html" target="_self">GLUTEUS MEDIUS</a></li>
+    <li class="in">13.&nbsp;&nbsp;<a href="13.html" target="_self">VASTUS LATERALIS</a></li>
+    <li class="in">14.&nbsp;&nbsp;<a href="14.html" target="_self">RECTUS FEMORIS</a></li>
+    <li class="in">15.&nbsp;&nbsp;<a href="15.html" target="_self">SARTORIUS</a></li>
+    <li class="in">16.&nbsp;&nbsp;<a href="16.html" target="_self">PECTINEUS</a></li>
+    <li class="in">17.&nbsp;&nbsp;<a href="17.html" target="_self">ADDUCTOR LONGUS</a></li>
+    <li class="in">18.&nbsp;&nbsp;<a href="18.html" target="_self">VASTUS MEDIALIS</a></li>
+    <li class="in">19.&nbsp;&nbsp;<a href="19.html" target="_self">GRACILIS</a></li>
+    <li class="in">20.&nbsp;&nbsp;<a href="20.html" target="_self">GASTROCNEMIUS</a></li>
+    <li class="in">21.&nbsp;&nbsp;<a href="21.html" target="_self">SOLEUS</a></li>
+    <li class="in">22.&nbsp;&nbsp;<a href="22.html" target="_self">TIBIALIS ANTERIOR</a></li>
+    <li class="in">23.&nbsp;&nbsp;<a href="23.html" target="_self">PERONEUS LONGU</a></li>
+    <li class="in">24.&nbsp;&nbsp;<a href="24.html" target="_self">TRAPEZIUS (Back Side)</a></li>
+    <li class="in">25.&nbsp;&nbsp;<a href="25.html" target="_self">INFRASPINATUS</a></li>
+    <li class="in">26.&nbsp;&nbsp;<a href="26.html" target="_self">TERES MAJOR</a></li>
+    <li class="in">27.&nbsp;&nbsp;<a href="27.html" target="_self">LATISSIMUS DORSI</a></li>
+    <li class="in">28.&nbsp;&nbsp;<a href="28.html" target="_self">DELTOID</a></li>
+    <li class="in">29.&nbsp;&nbsp;<a href="29.html" target="_self">TRICEPS BRACHII</a></li>
+    <li class="in">30.&nbsp;&nbsp;<a href="30.html" target="_self">EXTENSOR CARPI ULNARIS</a></li>
+    <li class="in">31.&nbsp;&nbsp;<a href="31.html" target="_self">FLEXOR CARPI ULNARIS</a></li>
+    <li class="in">32.&nbsp;&nbsp;<a href="32.html" target="_self">GLUTEUS MEDIUS</a></li>
+    <li class="in">33.&nbsp;&nbsp;<a href="33.html" target="_self">GLUTEUS MAXIMUS</a></li>
+    <li class="in">34.&nbsp;&nbsp;<a href="34.html" target="_self">VASTUS LATERALIS</a></li>
+    <li class="in">35.&nbsp;&nbsp;<a href="34.html" target="_self">BICEPS FEMORIS</a></li>
+    <li class="in">36.&nbsp;&nbsp;<a href="34.html" target="_self">SEMITENDINOSUS</a></li>
+    <li class="in">37.&nbsp;&nbsp;<a href="34.html" target="_self">SEMIMEMBRANOSUS</a></li>
+    <li class="in">38.&nbsp;&nbsp;<a href="34.html" target="_self">ADDUCTOR MAGNUS</a></li>
+    <li class="in">39.&nbsp;&nbsp;<a href="34.html" target="_self">GASTROCNEMIUS</a></li>
+  <span class="empty-item">no results</span>
+</ul>
+   </section>
+
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script  src="./script.js"></script>
+
+<script>
+  $("#search-text").focus();
+  $("#search-text").select();
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'><link rel="stylesheet" href="./water_flot_menu_style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html
+	<div class="itemMenuBox employees"><a href="javascript:void(0)" class="itemMenu "><i class="fa fa-users" aria-hidden="true"></i></a></div>
+	<div class="itemMenuBox location"><a href="javascript:void(0)" class="itemMenu "><i class="fa fa-location-arrow" aria-hidden="true"></i></a></div>
+	<div class="itemMenuBox eservices"><a href="javascript:void(0)" class="itemMenu "><i class="fa fa-key" aria-hidden="true"></i></a></div>
+-->
+<div id="mainMenu" class="mainMenuOverlay floating2">
+  <div class="navire floating3"></div>
+	<div class="itemMenuBox bills"><a href="index.html" target="_blank" class="itemMenu "><i class="fa fa-home" aria-hidden="true"></i></a></div>
+	<div class="itemMenuBox tarsheed"><a href="search.html" class="itemMenu "><i class="fa fa-search" aria-hidden="true"></i></a></div>
+   	<div class="itemMenuBox contact"><a href="index2.html" class="itemMenu "><i class="fa fa-male" aria-hidden="true"></i></a></div>
+
+	<a href="javascript:void(0)" class="toggleMenu floating" ><i class="fa fa-bars" aria-hidden="true"></i></a>
+</div>
+
+
+
+<!-- Signature
+<div class="signatureBox fixed">Coded by <a href="https://rajneesh2350.github.io/portfolio/" target="_blank">Raj.</a></div>
+ -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./water_flot_menu_script.js">
+
+
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="./nav_style.css">
+ <script>
+function goBack() {
+    window.history.back();
+}
+</script>
+<script>
+function goForward() {
+  window.history.forward();
+}
+</script>
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+   <div class="titlepage" id="pagetitle"></div>
+  <a href="index.html" target="_self"><i id="xsearch" class="fa fa-home" aria-hidden="true"></i></a>
+
+
+
+
+  <div class="bg1"></div>
+  <div class="button1"><a onclick="goForward()" target="_self"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></div>
+  <div class="bg2"></div>
+  <div class="button2"><a onclick="goBack()" target="_self"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a></div>
+
+</body>
+<script>
+var x = document.title;
+document.getElementById("pagetitle").innerHTML = x;
+</script>
+</html>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Muscle Mania Ver.1.0 - Menu</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="./menustyle.css">
+<style>
+img {
+   max-width: 100%;
+   height: auto;
+   z-index: -1;
+}
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<div id="circularMenu" class="circular-menu">
+
+  <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+    <i class="fa fa-plus"></i>
+  </a>
+
+  <menu class="items-wrapper">
+    <a href="index.html" title='Home' class="menu-item fa fa-home"></a>
+    <a href="search.html" title='Search' class="menu-item fa fa-search"></a>
+    <a href="index2.html" title='Body' class="menu-item fa fa-male"></a>
+    <a href="index.html" title='Refresh' class="menu-item fa fa-refresh"></a>
+  </menu>
+
+</div>
+
+<!-- partial -->
+  
+</body>
+</html>

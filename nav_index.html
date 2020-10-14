@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<title>Navigation...</title>
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="./nav_style.css">
+ <script>
+function goBack() {
+    window.history.back();
+}
+</script>
+<script>
+function goForward() {
+  window.history.forward();
+}
+</script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+  <div class="titlepage" id="pagetitle"></div>
+  <a href="search.html" target="_self"><i id="xsearch" class="fa fa-search-plus" aria-hidden="true"></i></a>
+  <i id="xburger" class="fa fa-bars" aria-hidden="true"></i>
+
+
+  <div class="bg1"></div>
+  <div class="button1"><a onclick="goForward()" target="_self"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></div>
+  <div class="bg2"></div>
+  <div class="button2"><a onclick="goBack()" target="_self"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a></div>
+</body>
+<script>
+var x = document.title;
+document.getElementById("pagetitle").innerHTML = x;
+</script>
+</html>

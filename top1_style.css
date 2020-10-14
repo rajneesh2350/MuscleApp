@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700);
+
+/*a:after{
+  content: '';
+  position: absolute;
+  margin-top: 20px;
+  left: 0%;
+  width: 0%;
+  height: 1px;
+  background: linear-gradient(to right, #FFC371, #FF5F6D);
+  transition: width 0.5s ease-in-out;
+  }
+  a:before{
+  content: '';
+  position: absolute;
+  margin-top: 20px;
+  right: 0%;
+  width: 0%;
+  height: 1px;
+  background: linear-gradient(to right, #FF5F6D, #FFC371);
+  transition: width 0.5s ease-in-out;
+   }
+   a:hover:before, a:hover:after{
+  width: 50%;
+}*/
+
+a
+{
+   color: #000000;
+   text-decoration: none;
+}
+a:visited
+{
+   color: #000000;
+}
+a:active
+{
+   color: #000000;
+}
+a:hover
+{
+   color: #575757;
+   text-decoration: underline;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /*background: linear-gradient(to right, #FFC371, #FF5F6D);*/
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*hide the checkbox*/
+input {
+  display: none;
+}
+
+/*label for checkbox*/
+label{
+  position: fixed;
+  cursor: pointer;
+  /*this prevent the label from moving to left when drawer is closed*/
+  left: 250px;
+  width: 50px;
+  height: 40px;
+  background-color:rgba(34, 152, 195, 0.84);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*burger menu without cheese*/
+label span{
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: #282828;
+  position: relative;
+  margin-bottom: 3px;
+  top: 12px;
+  left: 8px;
+  transition: all 0.4s ease-in-out;
+
+}
+
+/*drawer moved to left (-100%)*/
+nav {
+  position: fixed;
+  margin: 0;
+  width: 250px;
+  height: 100%;
+  background: rgba(34, 152, 195, 0.84);
+  opacity: 99;
+  transition: transform 0.4s ease;
+  transform: translateX(-100%);
+  /*background: linear-gradient(to right, #FFC371, #FF5F6D);*/
+}
+
+/*just a lists inside a drawer*/
+nav li{
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  list-style-type: none;
+  cursor: pointer;
+  padding: 15px 0 15px 10px;
+  font-size: 2rem;
+  font-family: 'Dancing Script';
+}
+
+nav a{
+  text-decoration: none;
+  color: #282828;
+  outline: none;
+}
+
+/*drawer links hover underline effects*/
+nav li:after{
+  content: '';
+  position: absolute;
+  margin-top: 30px;
+  left: 0%;
+  width: 0%;
+  height: 1px;
+  background: linear-gradient(to right, #FFC371, #FF5F6D);
+  transition: width 0.5s ease-in-out;
+}
+nav li:before{
+  content: '';
+  position: absolute;
+  margin-top: 30px;
+  right: 0%;
+  width: 0%;
+  height: 1px;
+  background: linear-gradient(to right, #FF5F6D, #FFC371);
+  transition: width 0.5s ease-in-out;
+   }
+nav li:hover:before, nav li:hover:after{
+  width: 50%;
+}
+
+/*main section*/
+section{
+  transition: transform 0.4s ease;
+  line-height: 30px;
+  margin: 60px;
+  color: #282828;
+}
+
+h1{
+  text-align: center;
+  color: #282828;
+}
+
+/*when input is checked we will move the drawer back to place*/
+input:checked ~ nav{
+  transform: translateX(0%);
+}
+
+/*move the section further to the right when input is checked*/
+input:checked ~ section{
+  transform: translateX(200px);
+}
+
+/*when input is checked we make the burger menu to look like crossmark (X)*/
+input:checked ~ nav label span:first-child{
+  transform: rotate(-48deg);
+  transform-origin: 30% 5%;
+}
+
+/*when input is checked we make the burger menu to look like crossmark (X)*/
+input:checked ~ nav label span:nth-last-child(1){
+  transform: rotate(48deg);
+  transform-origin: 30% 5%;
+}

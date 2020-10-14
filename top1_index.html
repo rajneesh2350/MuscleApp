@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Drawer</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand'>
+  <link rel="stylesheet" href="./top1_style.css">
+
+</head>
+<body id='id01'>
+<!-- partial:index.partial.html -->
+<!--we use checkbox hack to make this-->
+
+<input type="checkbox" id="menu"/>
+
+  <nav>
+    <!--label is inside the drawer but drawer is moved to left(-100%) when checkbox is not checked but the label is moved from left to 200px so it will look like when drawer is closed the label is there to open a drawer-->
+    <label for="menu">
+      <!--burger menu without cheese-->
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+<br><br>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="search.html">Search</a></li>
+    <li><a href="index2.html">Full Body</a></li>
+    <hr>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login.html">Login</a></li>
+  </nav>
+
+
+<section>
+  <article>
+  <h1></h1>
+    <p></p>
+    </article>
+</section>
+<!-- partial -->
+</body>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+   modal.style.display = "none";
+   location.reload();
+}
+  }
+</script>
+<!--<script>
+ $(document).ready(function(){
+  $("body").mouseup(function(){
+      var modal = document.getElementById('id01');
+     modal.style.display = "none";
+   location.reload();  modal.style.display = "none";
+   location.reload();
+  });
+  $("body").mousedown(function(){
+      var modal = document.getElementById('id01');
+     modal.style.display = "none";
+   location.reload();  modal.style.display = "none";
+   location.reload();
+
+  });
+});
+</script>-->
+
+
+</script>
+</html>
